@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <title>GSAP landing page</title>
+  </head>
+  <body>
+    <h1>Engeneering For Tomorrow</h1>
+    <button id="cta">watch here</button>
+
+    <div class="panel">
+      <img src="images/lightbulb.svg" id="light" alt="lightbulb" />
+      <div class="p-box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          laboriosam infinit dolore? Eum, impedit fugiat!
+        </p>
+      </div>
+      <div class="box"></div>
+    </div>
+    <script>
+      document.getElementById("cta").addEventListener("click", function() {
+        TweenMax.from(".panel", 2, { opacity: 0, ease: Circ.easeOut });
+        TweenMax.from("#light", 1, {
+          opacity: 0,
+          scale: 0.7,
+          delay: 1,
+          ease: Back.easeOut.config(2)
+        });
+        TweenMax.from(".p-box", 3, {
+          scale: 0.7,
+          ease: Elastic.easeOut.config(1, 0.3)
+        });
+        TweenMax.from("p", 1, {
+          opacity: 0,
+          delay: 1.5,
+          ease: Power2.easeOut
+        });
+        TweenMax.from(".box", 3, {
+          scale: 1.5,
+          ease: Elastic.easeOut.config(1, 0.3)
+        });
+      });
+    </script>
+  </body>
+</html>
