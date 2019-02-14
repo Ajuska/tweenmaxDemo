@@ -6,7 +6,7 @@ This project is made for trying various tutorials or ideas with [Green Sock Anim
 
 If you want to try some of these demos, simply download the git repository as a ZIP or clone the project via HTTPS or SSH.
 
-### Project overviw gifs
+### Project overview gifs
 
 #### [3D](https://www.youtube.com/watch?v=nZHEidg3HZ4 "Youtube 3D flip") flip page
 
